@@ -1,0 +1,26 @@
+﻿    @model Empleado
+
+<form method="post">
+    <input asp-for="Nombre" placeholder="Nombre" />
+    <span asp-validation-for="Nombre"></span>
+
+    <input asp-for="Apellidos" placeholder="Apellidos" />
+    <span asp-validation-for="Apellidos"></span>
+
+    <input asp-for="Departamento" placeholder="Departamento" />
+    <span asp-validation-for="Departamento"></span>
+
+    <input asp-for="Salario" />
+    <span asp-validation-for="Salario"></span>
+
+    <input asp-for="FechaIngreso" type="date" />
+
+    <div>
+    <label>
+        <input type="checkbox" asp-for="Activo" class="form-check-input" />
+        Activo
+    </label>
+    </div>
+
+    <button type="submit">Guardar</button>
+</form>
