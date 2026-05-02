@@ -12,7 +12,6 @@ namespace Tarea3_GestionEmpleados__C4F794_.Data
 
         public DbSet<Empleado> Empleados { get; set; }
 
-        // 👇 AQUÍ VA
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
